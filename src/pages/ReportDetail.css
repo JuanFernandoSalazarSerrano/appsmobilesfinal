@@ -1,0 +1,19 @@
+.report-detail-content {
+  --background: radial-gradient(circle at 10% 10%, #eef6e9, #f7f1e3 60%, #efe6d7 100%);
+  padding: 20px;
+}
+
+.report-detail-header {
+  display: grid;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.report-detail-observation {
+  font-family: var(--app-display-font);
+  font-size: 22px;
+}
+
+.report-detail-meta {
+  color: var(--ion-color-medium);
+}

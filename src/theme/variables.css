@@ -1,2 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
 /* For information on how to create your own theme, please refer to:
 http://ionicframework.com/docs/theming/ */
+
+:root {
+	--ion-font-family: 'Space Grotesk', 'Segoe UI', sans-serif;
+	--app-display-font: 'Fraunces', 'Times New Roman', serif;
+
+	--ion-color-primary: #2f7d4e;
+	--ion-color-primary-rgb: 47, 125, 78;
+	--ion-color-primary-contrast: #ffffff;
+	--ion-color-primary-contrast-rgb: 255, 255, 255;
+	--ion-color-primary-shade: #296e45;
+	--ion-color-primary-tint: #3b8a5c;
+
+	--ion-color-secondary: #d2a75d;
+	--ion-color-secondary-rgb: 210, 167, 93;
+	--ion-color-secondary-contrast: #1b1e1c;
+	--ion-color-secondary-contrast-rgb: 27, 30, 28;
+	--ion-color-secondary-shade: #b99352;
+	--ion-color-secondary-tint: #d9b06d;
+
+	--ion-color-tertiary: #2b8c7c;
+	--ion-color-tertiary-rgb: 43, 140, 124;
+	--ion-color-tertiary-contrast: #ffffff;
+	--ion-color-tertiary-contrast-rgb: 255, 255, 255;
+	--ion-color-tertiary-shade: #257b6d;
+	--ion-color-tertiary-tint: #3e9888;
+
+	--ion-color-dark: #1b1e1c;
+	--ion-color-medium: #5a6a63;
+	--ion-color-light: #f2eadf;
+
+	--app-ink: #1b1e1c;
+	--app-sand: #f2eadf;
+	--app-moss: #9fba88;
+	--app-pebble: #e5ddd1;
+}
+
+.eco-content {
+	--color: var(--app-ink);
+}

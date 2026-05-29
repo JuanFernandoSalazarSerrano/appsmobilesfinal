@@ -1,0 +1,16 @@
+.report-card {
+  border-radius: 18px;
+  box-shadow: 0 12px 28px rgba(26, 30, 28, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.report-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 32px rgba(26, 30, 28, 0.18);
+}
+
+.report-card-meta {
+  display: block;
+  margin-top: 10px;
+  color: var(--ion-color-medium);
+}

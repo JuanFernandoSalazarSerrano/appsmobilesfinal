@@ -1,0 +1,170 @@
+.content {
+  --background: var(--app-bg-decor);
+}
+
+.shell {
+  display: grid;
+  gap: var(--app-space-lg);
+  padding: var(--app-space-lg);
+}
+
+.header {
+  display: grid;
+  gap: var(--app-space-sm);
+}
+
+.headerAction {
+  justify-self: start;
+}
+
+.kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: var(--app-text-meta);
+  color: var(--ion-color-medium);
+}
+
+.title {
+  font-family: var(--app-display-font);
+  font-size: var(--app-text-title);
+  margin: 0;
+}
+
+.subtitle {
+  margin: 0;
+  color: var(--ion-color-medium);
+  font-size: var(--app-text-body);
+}
+
+.mapCard {
+  background: var(--app-color-surface);
+  border-radius: var(--app-radius-xl);
+  padding: var(--app-space-md);
+  box-shadow: var(--app-shadow-md);
+}
+
+.map {
+  position: relative;
+  border-radius: var(--app-radius-lg);
+  overflow: hidden;
+  min-height: 320px;
+  height: min(55vh, 420px);
+  background: #eaf4ef;
+}
+
+:global(.leaflet-control-attribution) {
+  font-size: 10px;
+  background: rgba(255, 255, 255, 0.85);
+  margin: 0 6px 6px;
+  border-radius: 999px;
+  padding: 2px 8px;
+}
+
+:global(.leaflet-container) {
+  font-family: var(--ion-font-family);
+}
+
+.leafletMarker {
+  background: transparent;
+  border: none;
+}
+
+.markerDot {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.95);
+  box-shadow: var(--app-shadow-sm);
+  position: relative;
+}
+
+.markerDot::after {
+  content: '';
+  position: absolute;
+  inset: -8px;
+  border-radius: 999px;
+  border: 2px solid var(--marker-color);
+  opacity: 0.35;
+  animation: ecoPulse 3s ease infinite;
+}
+
+.markerIcon {
+  font-size: 18px;
+  color: var(--marker-color);
+}
+
+.legend {
+  display: grid;
+  gap: var(--app-space-sm);
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: var(--app-space-sm);
+  padding: var(--app-space-sm) var(--app-space-md);
+  border-radius: var(--app-radius-lg);
+  background: var(--app-color-surface);
+  box-shadow: var(--app-shadow-sm);
+  font-size: var(--app-text-meta);
+  color: var(--app-ink);
+}
+
+.legendIcon {
+  font-size: 18px;
+  color: var(--marker-color);
+}
+
+@keyframes ecoPulse {
+  0% {
+    transform: scale(0.7);
+    opacity: 0.4;
+  }
+  70% {
+    transform: scale(1);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+@media (min-width: 720px) {
+  .header {
+    grid-template-columns: 1fr auto;
+    align-items: end;
+  }
+}
+
+@media (max-width: 520px) {
+  .shell {
+    padding: var(--app-space-md);
+  }
+
+  .header {
+    gap: var(--app-space-md);
+  }
+
+  .headerAction {
+    width: 100%;
+  }
+
+  .mapCard {
+    padding: var(--app-space-sm);
+  }
+
+  .map {
+    min-height: 240px;
+    height: 52vh;
+  }
+
+  .legend {
+    grid-template-columns: 1fr;
+  }
+}

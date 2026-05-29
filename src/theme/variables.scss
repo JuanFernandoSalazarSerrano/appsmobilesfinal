@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+/* For information on how to create your own theme, please refer to:
+http://ionicframework.com/docs/theming/ */
+
+:root {
+  --ion-font-family: 'Space Grotesk', 'Avenir Next', sans-serif;
+  --app-display-font: 'Fraunces', 'Georgia', serif;
+
+  /* Main semantic tokens */
+  --background: #f2faf0;
+  --foreground: #1f2f26;
+  --primary: #22c55e;
+  --secondary: #e8f6ea;
+  --muted: #edf8ef;
+  --accent: #34d399;
+  --border: #d4e8d7;
+  --ring: #22c55e;
+
+  /* Eco custom tokens */
+  --eco-leaf: #22c55e;
+  --eco-leaf-dark: #16a34a;
+  --eco-leaf-light: #86efac;
+  --eco-sky: #bde7f6;
+  --eco-glow: #dcfce7;
+
+  /* Layered background surfaces */
+  --app-color-background: var(--background);
+  --app-color-surface: #ffffff;
+  --app-color-surface-muted: var(--muted);
+  --app-color-border: var(--border);
+  --app-ink: var(--foreground);
+
+  --app-bg-gradient:
+    radial-gradient(circle at 0% -5%, rgba(34, 197, 94, 0.08) 0%, transparent 45%),
+    radial-gradient(circle at 90% 0%, rgba(56, 189, 248, 0.06) 0%, transparent 40%),
+    radial-gradient(circle at 50% 100%, rgba(16, 185, 129, 0.03) 0%, transparent 50%),
+    linear-gradient(180deg, #f4fbf2 0%, #fbfffc 100%);
+  --app-bg-pattern: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220' viewBox='0 0 220 220' fill='none'><path d='M40 140c34-70 124-86 166-22 18 26 16 60-4 86-20 26-52 40-86 40-34 0-64-14-82-40-18-26-18-52 6-64' stroke='%239fe7c2' stroke-width='9' stroke-linecap='round' stroke-linejoin='round' opacity='0.26'/><path d='M70 130c22-42 78-56 106-22 12 16 12 34 0 48-12 14-32 22-52 22-20 0-38-8-48-22-8-12-8-22-6-26' stroke='%23c8f2df' stroke-width='7' stroke-linecap='round' stroke-linejoin='round' opacity='0.26'/></svg>");
+  --app-bg-decor: var(--app-bg-pattern) center/220px 220px repeat, var(--app-bg-gradient);
+
+  --app-gradient-brand: linear-gradient(135deg, #16a34a 0%, #34d399 55%, #22c55e 100%);
+  --app-gradient-soft: linear-gradient(140deg, #ecfced 0%, #e8f6ff 100%);
+
+  --ion-color-primary: var(--primary);
+  --ion-color-primary-rgb: 34, 197, 94;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: #1faa50;
+  --ion-color-primary-tint: #3dcd6f;
+
+  --ion-color-secondary: #14b8a6;
+  --ion-color-secondary-rgb: 20, 184, 166;
+  --ion-color-secondary-contrast: #ffffff;
+  --ion-color-secondary-contrast-rgb: 255, 255, 255;
+  --ion-color-secondary-shade: #12a292;
+  --ion-color-secondary-tint: #2cc1b1;
+
+  --ion-color-tertiary: #4ade80;
+  --ion-color-tertiary-rgb: 74, 222, 128;
+  --ion-color-tertiary-contrast: #ffffff;
+  --ion-color-tertiary-contrast-rgb: 255, 255, 255;
+  --ion-color-tertiary-shade: #41c36f;
+  --ion-color-tertiary-tint: #5de08d;
+
+  --ion-color-success: #22c55e;
+  --ion-color-warning: #f59e0b;
+  --ion-color-danger: #ef4444;
+
+  --ion-color-dark: #1c2b22;
+  --ion-color-medium: #5f7a67;
+  --ion-color-light: #f5fbf5;
+
+  --ion-background-color: var(--app-color-background);
+  --ion-text-color: var(--app-ink);
+  --ion-item-background: var(--app-color-surface);
+  --ion-card-background: var(--app-color-surface);
+  --ion-toolbar-background: var(--app-color-background);
+  --ion-tab-bar-background: var(--app-color-surface);
+
+  --app-radius-sm: 8px;
+  --app-radius-md: 12px;
+  --app-radius-lg: 16px;
+  --app-radius-xl: 24px;
+
+  --app-space-xs: 4px;
+  --app-space-sm: 8px;
+  --app-space-md: 12px;
+  --app-space-lg: 16px;
+  --app-space-xl: 24px;
+
+  --app-shadow-sm: 0 8px 16px rgba(0, 128, 64, 0.08);
+  --app-shadow-md: 0 14px 28px rgba(0, 128, 64, 0.12);
+  --app-shadow-lg: 0 18px 38px rgba(0, 128, 64, 0.15);
+
+  --app-text-title: 24px;
+  --app-text-section: 18px;
+  --app-text-body: 15px;
+  --app-text-meta: 12px;
+
+  /* Data feedback semantics */
+  --app-score-good: #10b981;
+  --app-score-fair: #84cc16;
+  --app-score-caution: #f59e0b;
+  --app-score-poor: #ef4444;
+}
+
+@supports (color: oklch(0.5 0.2 150)) {
+  :root {
+    --background: oklch(0.98 0.01 145);
+    --foreground: oklch(0.2 0.03 150);
+    --primary: oklch(0.55 0.2 145);
+    --secondary: oklch(0.92 0.04 145);
+    --muted: oklch(0.95 0.02 145);
+    --accent: oklch(0.65 0.18 145);
+    --border: oklch(0.88 0.04 145);
+    --ring: oklch(0.55 0.2 145);
+
+    --eco-leaf: oklch(0.55 0.2 145);
+    --eco-leaf-light: oklch(0.75 0.15 145);
+    --eco-sky: oklch(0.85 0.08 220);
+    --eco-glow: oklch(0.9 0.1 145);
+  }
+}
+
+body {
+  background: var(--ion-background-color);
+  color: var(--ion-text-color);
+  font-family: var(--ion-font-family);
+}
+
+a {
+  color: inherit;
+}
+
+ion-card {
+  border-radius: var(--app-radius-lg);
+  box-shadow: var(--app-shadow-sm);
+}
+
+ion-item {
+  --border-radius: var(--app-radius-md);
+  --padding-start: var(--app-space-md);
+  --inner-padding-end: var(--app-space-md);
+}
+
+ion-button {
+  --border-radius: var(--app-radius-lg);
+  --padding-top: 12px;
+  --padding-bottom: 12px;
+  font-weight: 600;
+}
+
+ion-chip {
+  border-radius: 999px;
+  font-size: var(--app-text-meta);
+  font-weight: 600;
+}
+
+.eco-content {
+  --color: var(--app-ink);
+  --background: var(--app-bg-decor);
+}

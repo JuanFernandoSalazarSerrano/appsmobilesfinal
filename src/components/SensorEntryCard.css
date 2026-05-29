@@ -1,0 +1,22 @@
+.sensor-entry-card {
+  border-radius: 16px;
+  box-shadow: 0 10px 22px rgba(26, 30, 28, 0.1);
+}
+
+.sensor-entry-value {
+  display: block;
+  margin-top: 8px;
+  font-weight: 600;
+}
+
+.sensor-entry-description {
+  display: block;
+  margin-top: 8px;
+  color: var(--ion-color-medium);
+}
+
+.sensor-entry-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}

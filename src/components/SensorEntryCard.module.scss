@@ -1,0 +1,31 @@
+.card {
+  border-radius: var(--app-radius-lg);
+  box-shadow: var(--app-shadow-sm);
+}
+
+.subtitle {
+  font-size: var(--app-text-meta);
+}
+
+.title {
+  font-size: var(--app-text-section);
+}
+
+.value {
+  display: block;
+  margin-top: var(--app-space-xs);
+  font-weight: 600;
+}
+
+.description {
+  display: block;
+  margin-top: var(--app-space-xs);
+  color: var(--ion-color-medium);
+  font-size: var(--app-text-body);
+}
+
+.actions {
+  display: flex;
+  gap: var(--app-space-sm);
+  margin-top: var(--app-space-md);
+}

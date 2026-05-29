@@ -1,0 +1,9 @@
+.header {
+  --background: var(--app-color-background);
+  border-bottom: 1px solid var(--app-color-border);
+}
+
+.title {
+  font-family: var(--app-display-font);
+  font-size: var(--app-text-title);
+}

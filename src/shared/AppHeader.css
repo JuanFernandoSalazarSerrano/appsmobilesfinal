@@ -1,0 +1,4 @@
+.app-header ion-title {
+  font-family: var(--app-display-font);
+  letter-spacing: 0.3px;
+}

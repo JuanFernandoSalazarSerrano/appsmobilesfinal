@@ -1,0 +1,29 @@
+.menuHeader {
+  padding: var(--app-space-xl) var(--app-space-lg) var(--app-space-lg);
+  background: linear-gradient(135deg, rgba(34, 197, 94, 0.1), rgba(56, 189, 248, 0.12));
+}
+
+.menuBrand {
+  font-family: var(--app-display-font);
+  font-size: 22px;
+  margin-bottom: var(--app-space-xs);
+}
+
+.menuList {
+  margin-top: var(--app-space-md);
+}
+
+.menuItem {
+  --background: transparent;
+  border-radius: var(--app-radius-md);
+  margin: 4px var(--app-space-md);
+}
+
+.menuItemSelected {
+  --background: var(--app-color-surface-muted);
+  color: var(--ion-color-primary);
+}
+
+.menuFooter {
+  padding: var(--app-space-lg);
+}

@@ -1,0 +1,18 @@
+.menu-header {
+  padding: 24px 16px 16px;
+  background: linear-gradient(135deg, #e6f0de, #f6efe2);
+}
+
+.menu-brand {
+  font-family: var(--app-display-font);
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+
+.menu-list .selected {
+  --background: #efe7d9;
+}
+
+.menu-footer {
+  padding: 16px;
+}

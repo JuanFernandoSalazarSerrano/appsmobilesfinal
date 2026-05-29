@@ -1,0 +1,40 @@
+.list {
+  display: grid;
+  gap: var(--app-space-md);
+  background: transparent;
+  padding: 0;
+}
+
+.item {
+  --background: var(--app-color-surface);
+  border-radius: var(--app-radius-lg);
+  box-shadow: var(--app-shadow-sm);
+  margin: 0;
+}
+
+.itemDisabled {
+  opacity: 0.55;
+}
+
+.label {
+  display: grid;
+  gap: 4px;
+}
+
+.label :global(h3) {
+  font-size: var(--app-text-section);
+  margin: 0;
+}
+
+.label :global(p) {
+  font-size: var(--app-text-body);
+  color: var(--ion-color-medium);
+  margin: 0;
+}
+
+.category {
+  text-transform: uppercase;
+  font-size: var(--app-text-meta);
+  letter-spacing: 0.08em;
+  color: var(--ion-color-medium);
+}

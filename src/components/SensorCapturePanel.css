@@ -1,0 +1,14 @@
+.capture-panel {
+  border-radius: 18px;
+  box-shadow: 0 14px 28px rgba(26, 30, 28, 0.12);
+}
+
+.capture-field {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.capture-hint {
+  color: var(--ion-color-medium);
+}

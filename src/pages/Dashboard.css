@@ -1,0 +1,35 @@
+.dashboard-content {
+  --background: radial-gradient(circle at 10% 10%, #eef6e9, #f6efe2 60%, #efe6d7 100%);
+}
+
+.dashboard-header {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px 20px 0;
+}
+
+.section-title {
+  font-family: var(--app-display-font);
+  font-size: 26px;
+  margin: 0 0 4px;
+}
+
+.section-subtitle {
+  margin: 0;
+  color: var(--ion-color-medium);
+}
+
+.report-grid {
+  display: grid;
+  gap: 16px;
+  padding: 20px;
+}
+
+@media (min-width: 720px) {
+  .dashboard-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}

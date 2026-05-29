@@ -1,0 +1,50 @@
+.content {
+  --background: var(--app-bg-decor);
+}
+
+.shell {
+  min-height: 100%;
+  display: grid;
+  gap: var(--app-space-xl);
+  padding: var(--app-space-xl) var(--app-space-lg);
+}
+
+.hero {
+  display: grid;
+  gap: var(--app-space-sm);
+}
+
+.kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: var(--app-text-meta);
+  color: var(--ion-color-medium);
+}
+
+.title {
+  font-family: var(--app-display-font);
+  font-size: 30px;
+  margin: 0;
+}
+
+.card {
+  border-radius: var(--app-radius-lg);
+  box-shadow: var(--app-shadow-md);
+}
+
+.form {
+  display: grid;
+  gap: var(--app-space-md);
+}
+
+.actions {
+  display: grid;
+  gap: var(--app-space-sm);
+  margin-top: var(--app-space-md);
+}
+
+.error {
+  display: block;
+  color: var(--ion-color-danger);
+  font-size: var(--app-text-meta);
+}

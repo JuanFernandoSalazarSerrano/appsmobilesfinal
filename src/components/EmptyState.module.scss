@@ -1,0 +1,68 @@
+.card {
+  border-radius: var(--app-radius-lg);
+  box-shadow: var(--app-shadow-md);
+}
+
+.content {
+  display: grid;
+  gap: var(--app-space-lg);
+  align-items: center;
+}
+
+.copy {
+  display: grid;
+  gap: var(--app-space-sm);
+}
+
+.iconWrap {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--app-color-surface-muted);
+  display: grid;
+  place-items: center;
+  color: var(--ion-color-primary);
+}
+
+.message {
+  color: var(--ion-color-medium);
+  font-size: var(--app-text-body);
+}
+
+.action {
+  margin-top: var(--app-space-md);
+}
+
+.illustration {
+  display: grid;
+  gap: var(--app-space-sm);
+  margin: 0;
+}
+
+.illustrationTitle {
+  color: var(--ion-color-dark);
+  font-family: var(--app-display-font);
+  font-size: var(--app-text-section);
+  margin: 0;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: var(--app-radius-lg);
+  border: 1px solid var(--app-color-border);
+  background: var(--app-color-surface-muted);
+  box-shadow: var(--app-shadow-sm);
+}
+
+@media (min-width: 760px) {
+  .content {
+    grid-template-columns: minmax(0, 1fr) minmax(240px, 42%);
+  }
+
+  .illustration {
+    align-self: stretch;
+  }
+}
